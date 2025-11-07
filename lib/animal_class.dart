@@ -3,7 +3,7 @@ class Animal{
   String name;
   String color;
 
-  Animal(this.id, this.name, this.color){}
+  Animal(this.id, this.name, this.color);
 }
 
 class Cat extends Animal{

@@ -8,7 +8,7 @@ class Laptop{
   String name;
   int ram;
 
-  Laptop(this.id, this.name, this.ram){}
+  Laptop(this.id, this.name, this.ram);
 
   void displayDetails(){
     print('id:$id\nname:$name\nram:$ram');

@@ -6,16 +6,15 @@ listOfExpenses();
 void listOfExpenses(){
   print("Write the list of expenses: ");
   String? expenses = stdin.readLineSync();
-  List<int>? whole_list;
+  List<int>? wholeList;
 
   if(expenses != null && expenses.isNotEmpty){
-    whole_list = expenses.split(",")
+    wholeList = expenses.split(",")
     .map((e) => int.tryParse(e.trim()))
     .whereType<int>()
     .toList();
-    var i;
     var sum = 0;
-    for (i in whole_list) {
+    for (var i in wholeList) {
       sum = i+ sum;
       i++;
     }
