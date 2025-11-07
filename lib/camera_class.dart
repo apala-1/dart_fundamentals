@@ -13,8 +13,8 @@ class Camera{
 
   set id(int value) => _id = value;
   set brand(String value) => _brand = value;
-  set value(String value) => _color = value;
-  set prize(int value) => _price = value;
+  set color(String value) => _color = value;
+  set price(int value) => _price = value;
 
   void printDetails() {
     print('ID: $_id, Brand: $_brand, Color: $color, Price: $_price');
